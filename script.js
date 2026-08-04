@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
-
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -20,13 +19,11 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }, { threshold: 0.08 });
-
   document.querySelectorAll('.service-card, .problem-card, .pillar, .step, .price-card, .portfolio-card, .founder-card').forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(18px)';
     el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
     observer.observe(el);
   });
-
   console.log('TRL Phase 1 - Proof Engine v4 loaded • WhatsApp 0319 0091457 • Community https://chat.whatsapp.com/BY9440hj8ws9F5034zBhHL');
 });
