@@ -1,6 +1,5 @@
 // TRL Phase 1 - Proof Engine - Simple Professional v4
 document.addEventListener('DOMContentLoaded', () => {
-  // Smooth scroll
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
       const id = this.getAttribute('href');
@@ -13,7 +12,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Reveal on scroll
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -30,19 +28,5 @@ document.addEventListener('DOMContentLoaded', () => {
     observer.observe(el);
   });
 
-  // Glow parallax
-  let ticking = false;
-  window.addEventListener('scroll', () => {
-    if (!ticking) {
-      window.requestAnimationFrame(() => {
-        const scrolled = window.scrollY;
-        const glow = document.querySelector('.glow-1');
-        if (glow) glow.style.transform = `translateX(-50%) translateY(${scrolled * 0.08}px)`;
-        ticking = false;
-      });
-      ticking = true;
-    }
-  });
-
-  console.log('TRL Phase 1 - Proof Engine v4 loaded • WhatsApp 0319 0091456 • Community https://chat.whatsapp.com/BY9440hj8ws9F5034zBhHL');
+  console.log('TRL Phase 1 - Proof Engine v4 loaded • WhatsApp 0319 0091457 • Community https://chat.whatsapp.com/BY9440hj8ws9F5034zBhHL');
 });
